@@ -18,6 +18,7 @@ https://webproject-cardgame.netlify.app/
 - 역할 분담:
   - 본인 역할: 기능 구현 전반 담당 (게임 로직, 카드 셔플, 스테이지, 모달창 등)
   - 팀원: UI 디자인 및 메뉴바 레이아웃 설계
+- IDE: Visual Studio Code
 - 기술 스택:
   - `HTML5`
   - `CSS3`
