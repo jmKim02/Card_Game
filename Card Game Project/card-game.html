@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>카드 짝 맞추기</title>
+        <meta name="description" content="HTML5, CSS3, JavaScript를 이용 - 카드 짝 맞추기">
+        <link rel="stylesheet" href="./css/card-game.css">
+    </head>
+    <body>
+        <div id="container" class="no-drag">
+            <!-- 게임판 -->
+            <div class="board">
+                <!-- 상단의 시간, 점수, 스테이지, 홈 표시 -->
+                <header class="menu">
+                    <!-- 시간 표시 -->
+                    <div class="menu__time">
+                        <div id="timer-bar"></div>
+                        <div id="timer-text" class="blink" aria-label="현재 남은 시간"></div>
+                    </div>
+                    <nav class="menu__nav">
+                        <!-- 점수 표시 -->
+                        <div class="menu__nav-score">
+                            <b>SCORE</b><strong id="play-score" aria-label="현재 점수"></strong>
+                        </div>
+                        <!-- 스테이지 표시 -->
+                        <div class="menu__nav-stage">
+                            <b>STAGE</b><strong id="play-stage" aria-label="스테이지"></strong>
+                        </div>
+                        <!-- 홈 표시 : index페이지로 이동 가능 -->
+                        <div class="menu__nav-home">
+                            <a href="./index.html" class="menu__nav-home--button" id="home-button">
+                            </a>
+                        </div>
+                    </nav>
+                </header>
+                <!-- 게임 진행 -->
+                <main class="game">
+                    <div class="game__board">
+                    </div>
+                </main>
+
+                <div class="stage-clear"></div>
+            </div>
+            <!-- 게임 종료 후 뜨는 모달 창 -->
+            <div class="modal modal-layer">
+                <div class="modal__content">
+                    <div class="modal__content-title">
+                    </div>
+            
+                    <button class="white-button modal__content-close-button" type="button">
+                        닫기
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="./js/card-game.js"></script>
+    </body>
+</html>
